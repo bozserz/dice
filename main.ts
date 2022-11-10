@@ -9,6 +9,7 @@ input.onGesture(Gesture.Shake, function () {
             . . . . .
             . . . . .
             `)
+        music.playTone(262, music.beat(BeatFraction.Whole))
     } else if (Dice == 2) {
         basic.showLeds(`
             . . . . .
@@ -17,6 +18,7 @@ input.onGesture(Gesture.Shake, function () {
             . . . # .
             . . . . .
             `)
+        music.playTone(294, music.beat(BeatFraction.Whole))
     } else if (Dice == 3) {
         basic.showLeds(`
             . . . . #
@@ -25,6 +27,7 @@ input.onGesture(Gesture.Shake, function () {
             . . . . .
             # . . . .
             `)
+        music.playTone(330, music.beat(BeatFraction.Whole))
     } else if (Dice == 4) {
         basic.showLeds(`
             . . . . .
@@ -33,6 +36,7 @@ input.onGesture(Gesture.Shake, function () {
             . # . # .
             . . . . .
             `)
+        music.playTone(349, music.beat(BeatFraction.Whole))
     } else if (Dice == 5) {
         basic.showLeds(`
             # . . . #
@@ -41,6 +45,7 @@ input.onGesture(Gesture.Shake, function () {
             . . . . .
             # . . . #
             `)
+        music.playTone(392, music.beat(BeatFraction.Whole))
     } else {
         basic.showLeds(`
             . # . # .
@@ -49,13 +54,8 @@ input.onGesture(Gesture.Shake, function () {
             . . . . .
             . # . # .
             `)
+        music.playTone(440, music.beat(BeatFraction.Whole))
     }
-    basic.pause(5000)
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
+    basic.pause(3000)
+    basic.clearScreen()
 })
